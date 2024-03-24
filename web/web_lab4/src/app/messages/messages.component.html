@@ -1,0 +1,34 @@
+<h2> messages component</h2>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Авторизация</title>
+</head>
+
+<body>
+    <div class="allchats">
+        <div *ngFor="let chat of chats">
+            <div class="chat" (click)="openChat(chat.num)">
+                <p>{{chat.name}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="messages">
+        <div class="input">
+            <input [(ngModel)]="msg" placeholder="Сообщение" class="msg">
+            <button id="send" (click)="send()">Отправить </button><br>
+        </div>
+        <div *ngFor="let msg of messages">
+            <div class="msg">
+                <p>{{msg.time}}</p>
+                <p class="name">{{msg.name}}</p>
+                <p>{{msg.msg}}</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

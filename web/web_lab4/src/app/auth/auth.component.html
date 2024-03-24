@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Авторизация</title>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="main">
+
+            Добро пожаловать в POLIBOOK
+            <div class="login">
+                <input [(ngModel)]="name" name="name"><br>
+                <input [(ngModel)]="password" name="password"><br>
+                {{comment}}
+                <button class="login" (click)="login()">Войти</button>
+            </div>
+            Еще не зарегистированы?
+            <button class="create" (click)="open_form()">Зарегистрироваться</button>
+            <div class="formNewUser" id="formNewUser">
+                <input [(ngModel)]="name" placeholder="name" name="name"><br>
+                <input [(ngModel)]="password" placeholder="password" name="password"><br>
+                <input [(ngModel)]="birthday" placeholder="birthday" name="birthday"><br>
+                <input [(ngModel)]="email" placeholder="email" name="email"><br>
+                <button class="create" (click)="add_user()">Создать аккаунт</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

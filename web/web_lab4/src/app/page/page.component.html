@@ -1,0 +1,30 @@
+<h2> page component </h2>
+<div class="grid">
+    <div class="main">
+        <div class="info">
+            <p class="name"> {{name}} </p>
+            <p class="bday"> {{birthday}} </p>
+            <p class="email"> {{email}} </p>
+            <p class="role"> {{role}} </p>
+            <p class="status"> {{status}} </p>
+            <div *ngIf = "isAdmin">
+                <a href="https://localhost:1338"> Перейти в модуль администрирования </a>
+        </div>
+        </div>
+    </div>
+    <div class="head">
+        <p> Новости пользователя </p>
+    </div>
+
+    <div class="news">
+        <div *ngFor="let note of news">
+            <div class="note">
+                <p>{{note}}</p>
+            </div>
+        </div>
+        <div class="addNews">
+            <input [(ngModel)]="note" name="note" placeholder="Добавить новость" class="note"><br>
+            <button class="addNews" (click)="addNews()">Опубликовать</button>
+        </div>
+    </div>
+</div>

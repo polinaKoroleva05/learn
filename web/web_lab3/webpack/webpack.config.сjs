@@ -1,0 +1,139 @@
+//"dev": "webpack serve Чopen Чconfig ./webpack/webpack.dev.js Чhot",
+const fs = require("fs");
+const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+//const PugPlugin = require("pug-plugin");
+//const PugWebpackPlugin = require('pug-webpack-plugin');
+const { publicPath } = require("../node_modules/webpack/lib/RuntimeGlobals");
+const webpack = require("webpack")
+const CopyWebpackPlugin = require("copy-webpack-plugin")
+
+
+const PATHS = {
+    src: path.resolve(__dirname, '../src/'),
+    style: path.resolve(__dirname, '../src/style'),
+    views: path.resolve(__dirname, '../src/views'),
+    images: path.resolve(__dirname, '../public/images')
+};
+
+const PAGES = fs.readdirSync(PATHS.views).filter(name => name.endsWith('.pug'))
+
+module.exports = {
+    //target: 'node', //при загрузке сервера вебпака, эта строчка мешает рекваерам почему то
+    mode: 'development',
+    //entry: `${PATHS.src}/index.js`,
+    entry: {'users': `${PATHS.src}/users.js`,
+            'theUser': `${PATHS.src}/theUser.js`,
+            'friendsNews': `${PATHS.src}/friendsNews.js`,
+            'friends': `${PATHS.src}/friends.js`},
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/',
+        filename: '[name].bundle.js',
+    },
+
+    optimization: {
+        splitChunks: {
+            chunks: "all"
+        }
+    },
+
+/*    resolve: {
+        fallback: {
+            "fs": false,
+            "https": false,
+        }
+    },*/
+
+    plugins: [
+
+        new CopyWebpackPlugin({
+        patterns: [{
+            from:  `${PATHS.images}`,
+            to: path.resolve(__dirname, 'dist')
+            }]
+        }),
+
+        new CleanWebpackPlugin(),
+
+        /*        new HtmlWebpackPlugin({
+                    template: `${PATHS.views}/index.html`
+                }),*/
+
+        ...PAGES.map(file => new HtmlWebpackPlugin({
+            template: `${PATHS.views}/${file}`,
+            filename: `./${file.replace(/\.pug/,'.html')}`,
+            chunks: [`${file.replace(/\.pug/,'')}`]
+        })),
+
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
+        }),
+
+        new webpack.ProvidePlugin({
+            $: 'jquery'
+        })
+
+        /*new PugWebpackPlugin({
+            template: `{PATHS.src}/index.pug`, // ѕуть к вашему Pug шаблону
+            filename: 'index.html', // »м€ выходного HTML файла
+        }),*/
+    ],
+
+	module: {
+		rules: [
+			{
+				test: /\.js(x)?$/,
+                loader: "babel-loader",
+                options: {
+                    presets: ["@babel/preset-env"]
+                },
+                exclude: /node_modules/
+            },
+
+            {
+                test: /\.(png|jp[2g]|webp|tiff|jfif|jpeg(2000)?|ico|bem|gif|svg)$/i,
+                type: "asset/resource"
+            },
+		
+			{
+				test: /\.less$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+					"css-loader",
+					"less-loader",
+				],
+            },
+
+            {
+                test: /\.css$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    "css-loader"
+                ],
+            },
+
+            {
+                test: /\.pug$/,
+                use: ['html-loader', 'pug-html-loader']
+            },
+		],
+	},
+    devServer: {
+        client: {
+            overlay: {
+                errors: true
+            }
+        },
+        static: {
+            directory: path.join(__dirname, 'dist'),
+        },
+        historyApiFallback:{
+            index:'./dist/users.html'
+        },
+        port: 4200,
+        hot: true
+    }
+}

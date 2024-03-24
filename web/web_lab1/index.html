@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+</head>
+
+<body>
+
+    <form action="main.html" method="get" onsubmit="savelocal()">
+        <div class="white-login">
+            <div class="login-div">
+                <label>
+                    Hello! Please login for tetris.<br><br> Enter your name below:<br><br><br>
+                    <input type="text" class="input-text" required name="username" id="Name"><br>
+                </label>
+                <br><br><br>
+                <input type="submit" class="play-button record" value="Login">
+            </div>
+        </div>
+        <script>
+
+            if(!localStorage.getItem("name")){
+                localStorage.setItem('name', JSON.stringify([{"Polina": 0}, "you r first!"]));
+            }
+            let listNames = JSON.parse(localStorage.getItem("name"));
+            document.getElementById('Name').value = listNames.at(1); //высвечивает имя последнего пользователя
+
+            function savelocal() {
+                let name = document.querySelector('[name = "username"]'); //взяли введенное имя
+                let listNames = JSON.parse(localStorage.getItem("name")); //взяли наш массив с именами
+                addName(listNames.at(0), name.value); //добавили имя в объект
+                localStorage.setItem('name', JSON.stringify([listNames.at(0), name.value]));
+            }
+
+            function addName(object, name) {
+                if (!object.hasOwnProperty(name)) {
+                    object[name] = 0;
+                }
+
+            }
+        </script>
+    </form>
+
+</body>
+
+</html>

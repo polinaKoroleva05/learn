@@ -1,0 +1,25 @@
+﻿extends layout
+
+block content
+	.topBar
+		a(class='btn add', href='/book') Добавить
+	.menu
+		.Libraryname Библиотека им.Королевой
+		.block
+			p.sort по дате возврата
+			button.btnSort(id='until', onclick='sort(id)', data-sortby='until')
+			p.sort в наличии
+		label(class='switch')
+			input(type='checkbox', id='ishere', onchange='sort(id)')
+			span(class="slider round")
+	.grid
+		each bookInfo, boockID in books
+			.bookBlock
+				.textBlock
+					p.title= bookInfo.title
+					p #{bookInfo.author}
+					p #{bookInfo.year}
+				a.btn.moreInfo(href='/book/' + boockID) Подробнее
+	script
+		include script_Index.js
+

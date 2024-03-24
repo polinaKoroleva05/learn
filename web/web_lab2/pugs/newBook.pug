@@ -1,0 +1,28 @@
+extends layout
+
+block content
+	a.btn(href='/') На главную
+	form(method='POST')
+		p
+		div.form-group
+			label(for='title') Название:
+			input(type='text', name='title')
+		div.form-group
+			label(for='author') Автор:
+			input(type='text', name='author')
+		div.form-group
+			label(for='year') Год:
+			input(type='text', name='year', pattern='[0-9]{1,4}')
+		div.form-group
+			label(for='ishere') Хранится в библиотеке:
+			input(type='checkbox', name='ishere', onchange='changeDisable()')
+		div.form-group
+			label(for='reader') Кому выдана:
+			input(type='text', name='reader', id='reader')
+		div.form-group
+			label(for='until') Дата возврата в виде гггг-мм-дд:
+			input(type='text', name='until', id='until', pattern='[0-9]{1,4}-[0-9]{1,2}-[0-9]{1,2}')
+		button.btn(type='submit', name='submit') Добавить
+	script
+		include script.js
+

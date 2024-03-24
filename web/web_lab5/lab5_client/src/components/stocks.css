@@ -1,0 +1,46 @@
+.stock{
+    border: 2px solid #61dafb;
+    width: 70vw;
+    margin-bottom: 2vh;
+    padding: 3vh 0 3vh 0;
+    border-radius: 20px;
+}
+
+.stockIN{
+    border: 2px solid #61dafb;
+    width: 70vw;
+    margin-bottom: 2vh;
+    padding: 3vh 0 3vh 0;
+    background-color: #61dafb2e;
+    border-radius: 20px;
+}
+
+.stocks{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10vh 0 6vh 0;
+}
+
+p.day{
+    color:rgb(219, 219, 219);
+    line-height: 0px;
+}
+
+.addToExchange, .deleteFromExchange{
+    background-color: #4b5266;
+    border: none;
+    border-radius: 2px;
+    color: #4b526600;
+    width: calc(11px + 2vmin);
+    height: calc(11px + 2vmin);
+    background-size: cover;
+    margin-right: 1vw;
+}
+
+.addToExchange{
+    background-image: url("../../public/plus.png");
+}
+.deleteFromExchange{
+    background-image: url("../../public/minus.png");
+}

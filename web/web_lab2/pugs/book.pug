@@ -1,0 +1,34 @@
+extends layout
+
+block content
+	a.btn(href='/') На главную
+
+	.infoBook
+		p.label Название:
+		p #{title}
+
+		p.label Автор:
+		p #{author}
+
+		p.label Год издания:
+		p #{year}
+
+		p.label Находится в библиотеке:
+		-if (ishere)
+			p да
+		-else
+			p нет
+		button.aboutReader(name='open', onclick='showConfirm()') Узнать о читателе
+
+	dialog(id='infoReader')
+		-if (ishere == true)
+			p Книга в библиотеке
+		-else
+			p Книга находится у #{reader} до #{until}
+		button.btn.special(name='close', onclick='hideConfirm()') Закрыть
+
+	a.btn(id='edit') Редактировать
+	a.btn.special(id='delete', onclick='deleteBook()') Удалить
+
+	script
+		include script_book.js

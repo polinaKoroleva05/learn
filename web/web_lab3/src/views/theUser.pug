@@ -1,0 +1,44 @@
+﻿doctype html
+html
+	head
+		title the user
+
+	body
+		h2 Страница пользователя
+		a.button(href="/") На главную
+		.grid
+			.main
+				img.avatar(src="/public/images/default.png", onerror="this.onerror=null; this.src='default.png'")
+				.info
+					p.name Name
+					p.bday birthday
+					p.email email
+					p.role role
+					p.status status
+					.buttons
+						a.button(class="tofriends") friends
+						a.button(class="newsfriends") friends news
+						button(id='edit') Редактировать
+			.news
+				.info
+					p.title Новости пользователя
+
+		.dialog(title="Редактирование")
+			form(method="POST", id="formEdit",enctype="multipart/form-data")
+				input(valuetype = 'text', name = 'name', placeholder='имя фамилия')
+				input(type = 'date', name = 'bday', placeholder='дата рождения')
+				input(type = 'email', name = 'email', placeholder='почта')
+				fieldset
+					legend Укажите роль
+					label(for='role') Админ
+					input(type = 'checkbox', name = 'role', id='role')
+				fieldset
+					legend Укажите статус
+					label(for='active') Активный
+					input(type = 'radio', name = 'status', id='active', value='active')
+					label(for='blocked') Заблокированный
+					input(type = 'radio', name = 'status', id='blocked', value='blocked')
+					label(for='unconfirmed') Не подтвержденный
+					input(type = 'radio', name = 'status', id='unconfirmed', value='unconfirmed')
+				input(type = 'file', name = 'photo')
+				button(type = 'submit', id = 'submit') Сохранить

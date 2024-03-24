@@ -1,0 +1,58 @@
+.broker{
+    border: 2px solid #61dafb;
+    width: 70vw;
+    margin-bottom: 2vh;
+    padding: 3vh 0 3vh 0;
+    border-radius: 20px;
+}
+
+.brokers{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10vh 0 6vh 0;
+}
+
+.money{
+    font-size: calc(10px + 1vmin);
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.money:disabled{
+    color: white;
+    background-color: #282c34;
+    border: none;
+}
+
+.money:disabled::placeholder{
+    color: white;
+}
+
+.save:disabled{
+    background-color: #282c34;
+    border: none;
+}
+
+.save:disabled::placeholder{
+    color: none;
+}
+
+.change, .delete{
+    background-color: #4b5266;
+    border: none;
+    border-radius: 2px;
+    color: #4b526600;
+    width: calc(11px + 2vmin);
+    height: calc(11px + 2vmin);
+    background-size: cover;
+    margin-right: 1vw;
+}
+
+.change{
+    background-image: url("../../public/redact.png");
+}
+.delete{
+    background-image: url("../../public/delete.png");
+}

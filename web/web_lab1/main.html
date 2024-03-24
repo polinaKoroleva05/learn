@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris</title>
+    <link href="css/Style.css?newversion" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="tableResult" class="result">
+        <div class="place-for-scroll">
+            <output name="result" class="simple-text" id="result"></output>
+        </div><br>
+        <button onclick="closeResult()" class="in-check">Close</button>
+        <button onclick="document.location='index.html'" class="in-check">ReloginR</button>
+    </div>
+
+    <div class="grid">
+        <canvas id="board" class="game-board"></canvas>
+        <div class="right-column">
+            <div class="whitespace"></div>
+            <div>
+                <h1>TETRIS SHOP</h1>
+                <p>Hello, <span id="curName"></span> ! </p>
+                <p>Score: <span id="score">0</span></p>
+                <p>Lines: <span id="lines">0</span></p>
+                <p>Level: <span id="level">0</span></p>
+                <br>
+                <p>Next buy:</p>
+                <canvas id="nextTetrino" class="nextTetrino"></canvas>
+            </div>
+            <br>
+            <button class="play-button" id="startButton">Start!</button><br>
+            <button onclick="openResult()" class="play-button record">Records</button>
+        </div>
+    </div>
+    
+    <script src="index.js?newversion" type="module"></script>
+
+    <script>
+
+        let curentName = JSON.parse(localStorage.getItem("name")).at(1);
+        document.getElementById("curName").textContent = curentName;
+        
+        function play(){
+            console.log("a");
+        }
+
+        function openResult() {
+            let audio = new Audio();
+            audio.src = 'sound/kassa.mp3';
+            audio.play();
+            var result = document.querySelector('.result');
+            result.style.display = 'block';
+            showRecords();
+        }
+
+        function closeResult() {
+            var result = document.querySelector('.result');
+            result.style.display = 'none';
+        }
+
+        function showRecords(){
+            let listNames = JSON.parse(localStorage.getItem("name"));
+            let arrScore = Object.entries(listNames.at(0));
+            arrScore.sort(compareFun);
+            //document.createElement("table");
+            //let txt = '';
+            let table = '<table><tbody>'
+            arrScore.forEach((elem)=>{table += '<tr><td>' + elem[0] + '</td><td>...............</td><td>' + elem[1] + ' lvl' + '</td></tr>'});
+            //arrScore.forEach((elem)=>{txt += elem[0] + '....................\t' + elem[1] + ' lvl' + '<br>'});
+            table+='</tbody></table>';
+            document.getElementById("result").innerHTML = table;
+        }
+
+        function compareFun(a, b){
+            return a[1] > b[1] ? -1 :
+                   a[1] < b[1] ? 1 :
+                   0;
+        }
+    </script>
+</body>
+
+</html>

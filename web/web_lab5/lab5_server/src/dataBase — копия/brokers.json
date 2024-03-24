@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Ilon Mask",
+        "money": 80000
+    },
+    {
+        "id": 2,
+        "name": "Mark Zuckerberg",
+        "money": 60000
+    },
+    {
+        "id": 3,
+        "name": "Oleg Tinkov",
+        "money": 20000
+    },
+    {
+        "id": 4,
+        "name": "Polina Koroleva",
+        "money": 180000
+    },
+    {
+        "id": 5,
+        "name": "Bill Geits",
+        "money": 100000
+    }
+]

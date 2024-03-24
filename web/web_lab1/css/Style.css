@@ -1,0 +1,145 @@
+﻿*{
+    font-family: 'Lucida console';
+    font-weight: 900;
+    color: #514a53;
+}
+
+body{
+    width:  99%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("/image/shop.png");
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 320px 200px;
+    justify-content: center;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game-board {
+    border: solid  #5c4862 3px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.play-button {
+    background-color: #dda590;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 18px;
+    border: solid #6e3d3a 3px;
+}
+
+.play-button.record{
+    background-color: #b9b1bb;
+    border: solid #5c4862 3px;
+}
+
+.in-check{
+    cursor: pointer;
+    position: relative;
+    opacity: 0;
+    top: 260px;
+    left: -20px;
+    margin-left: 34px;
+    padding: 40px 42px;
+    border: solid #626262 2px;
+}
+
+
+.login-div {
+    font-size: 16px;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+    left: 40px
+}
+
+.white-login{
+    height: 300px;
+    width: 400px;
+    transform: translate(0, 50%);
+    background-color: #ffffffd1;
+    margin: auto;
+    border-radius: 18px;
+    
+}
+
+.input-text{
+    width:  200px;
+    height: 30px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 18px;
+}
+
+.result {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 536px;
+    width: 368px;
+    text-align: center;
+    padding: 15px;
+    /*border: solid  #8f7f6e 2px;
+    border-radius: 18px;
+    background-color: #bca690;*/
+    display: none;
+    background-image: url("/image/check.png");
+  }
+
+.place-for-scroll{
+    position: relative;
+    top: 120px;
+    left: 5px;
+    overflow-y: scroll;
+    height: 160px;                  /*.................................................TO DO 160*/
+    background-color: #ffffff00;
+}
+
+
+.place-for-scroll::-webkit-scrollbar{
+    width: 6px;
+}
+
+.place-for-scroll::-webkit-scrollbar-thumb{
+    background-color:  #d3d3d3;
+    border-radius: 18px;
+}
+
+.nextTetrino{
+    border: solid #5c4862 3px;
+    border-radius: 18px;
+    background-color: white;
+}
+
+.simple-text{
+    color: #55473a;
+    background-color: #ffffff00;
+}
+
+table{
+    background-color: #ffffff00;
+    width: 100%;
+}
+
+.whitespace{
+    top: 2px;
+    left: 500px;
+    border-radius: 18px;
+    position: absolute;
+    background-color: #ffffffd1;
+    height: 618px;
+    width: 550px;
+    z-index: -100;
+}

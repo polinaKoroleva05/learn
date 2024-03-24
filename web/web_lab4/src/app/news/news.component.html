@@ -1,0 +1,11 @@
+<h2> news component </h2>
+<div class="grid">
+    <div class="news">
+        <div *ngFor="let note of news">
+            <div class="note">
+                <p class="name"> {{note.name}} </p>
+                <p>{{note.news}}</p>
+            </div>
+        </div>
+    </div>
+</div>

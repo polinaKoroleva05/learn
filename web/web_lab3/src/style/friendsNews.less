@@ -1,0 +1,58 @@
+@color: #f5f5f5;
+@size: 1.2em;
+@border-radius: 15px;
+
+#header {
+    color: @color;
+}
+
+p {
+    color: black;
+    font-size: @size;
+
+    &.name {
+        color: black;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-row-gap: 40px;
+    justify-content: center;
+
+}
+
+.element {
+    background-color: @color;
+    border-radius: @border-radius;
+    padding: 30px;
+    width: 400px;
+}
+
+.postHead {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+img.avatar{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+a.button {
+    font-size: @size;
+    background-color: #86bfe6;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: @border-radius;
+    padding: 5px 15px;
+    cursor: pointer;
+}

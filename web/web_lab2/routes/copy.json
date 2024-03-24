@@ -1,0 +1,66 @@
+{
+  "1": {
+    "title": "Черный человек",
+    "author": "Есенин",
+    "year": "1926",
+    "ishere": true,
+    "reader": "",
+    "until": ""
+  },
+  "2": {
+    "title": "Белый клык",
+    "author": "Джек Лондон",
+    "year": "1980",
+    "ishere": false,
+    "reader": "Поля",
+    "until": "2023-12-05"
+  },
+  "3": {
+    "title": "Морфий",
+    "author": "Булгаков",
+    "year": "1951",
+    "ishere": true,
+    "reader": "",
+    "until": ""
+  },
+  "4": {
+    "title": "Весна",
+    "author": "Бук",
+    "year": "1981",
+    "ishere": false,
+    "reader": "Улитка",
+    "until": "2023-11-01"
+  },
+  "5": {
+    "title": "Леди Макбет Мценского уезда",
+    "author": "Лесков",
+    "year": "1910",
+    "ishere": true,
+    "reader": "",
+    "until": ""
+  },
+  "6": {
+    "title": "Леди Макбет Мценского уезда",
+    "author": "Лесков",
+    "year": "1910",
+    "ishere": true,
+    "reader": "",
+    "until": ""
+  },
+  "7": {
+    "title": "Записки юного врача",
+    "author": "Булгаков",
+    "year": "1980",
+    "ishere": true,
+    "reader": "",
+    "until": ""
+  },
+  "8": {
+    "title": "книга",
+    "author": "для удаления",
+    "year": "1620",
+    "ishere": true,
+    "reader": "",
+    "until": ""
+  }
+}

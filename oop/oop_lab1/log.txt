@@ -1,0 +1,263 @@
+GM 00:06:45		Start Game
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (0,0)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (2,0)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (3,0)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (6,0)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (12,0)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (14,0)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (0,1)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (1,1)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (7,1)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (8,1)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (9,1)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (12,1)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (13,1)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (14,1)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (0,2)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (1,2)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (4,2)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (5,2)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (6,2)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (7,2)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (9,2)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (10,2)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (12,2)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (13,2)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (14,2)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (2,3)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (3,3)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (4,3)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (9,3)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (10,3)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (14,3)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (0,4)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (2,4)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (3,4)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (4,4)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (6,4)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (8,4)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (11,4)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (0,5)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (1,5)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (3,5)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (4,5)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (5,5)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (7,5)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (8,5)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (9,5)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (10,5)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (11,5)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (12,5)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (13,5)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (14,5)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (1,6)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (2,6)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (3,6)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (4,6)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (6,6)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (7,6)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (8,6)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (9,6)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (10,6)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (11,6)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (1,7)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (2,7)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (3,7)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (4,7)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (7,7)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (8,7)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (9,7)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (10,7)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (11,7)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (12,7)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (14,7)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (1,8)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (2,8)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (3,8)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (4,8)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (5,8)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (6,8)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (9,8)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event created: Map
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (10,8)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (12,8)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (14,8)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (0,9)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (1,9)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (2,9)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (5,9)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (6,9)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event created: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (7,9)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (8,9)
+MM 00:06:53 C:\Temp\tmp\oop_lab1\Damage.cpp		Event created: Damage
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (13,9)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Create event at position (14,9)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event created: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Field initialisated
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (11,4)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event activated: Map
+MM 00:06:41 C:\Temp\tmp\oop_lab1\BoneGround.cpp		Event created: BoneGround
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (11,5)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event activated: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (11,4)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (11,3)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (11,2)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (10,2)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event activated: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (9,2)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event activated: Map
+MM 00:06:41 C:\Temp\tmp\oop_lab1\BoneGround.cpp		Event created: BoneGround
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (9,1)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event activated: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (8,1)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event activated: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (7,1)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (7,2)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event activated: Map
+MM 00:06:41 C:\Temp\tmp\oop_lab1\BoneGround.cpp		Event created: BoneGround
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (6,2)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event activated: Map
+MM 00:06:41 C:\Temp\tmp\oop_lab1\BoneGround.cpp		Event created: BoneGround
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (5,2)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event activated: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (6,2)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (6,3)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (6,4)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event activated: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (5,4)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (4,4)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event activated: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (3,4)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event activated: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (4,4)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (4,5)
+MM 00:06:40 C:\Temp\tmp\oop_lab1\Bone.cpp		Event activated: Bone
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (4,6)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event activated: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (4,5)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (5,5)
+MM 00:06:50 C:\Temp\tmp\oop_lab1\Map.cpp		Event activated: Map
+MM 00:06:41 C:\Temp\tmp\oop_lab1\BoneGround.cpp		Event created: BoneGround
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (5,4)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (6,4)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (7,4)
+MM 00:06:41 C:\Temp\tmp\oop_lab1\BoneGround.cpp		Event activated: BoneGround
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (8,4)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event activated: Level_up
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (8,3)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (9,3)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (9,2)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (9,1)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (8,1)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (7,1)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (7,2)
+MM 00:06:41 C:\Temp\tmp\oop_lab1\BoneGround.cpp		Event activated: BoneGround
+EM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp 27		Attempt to stand on an impassable cell 8 ; 2
+EM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp 27		Attempt to stand on an impassable cell 8 ; 2
+EM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp 27		Attempt to stand on an impassable cell 8 ; 2
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (7,1)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (8,1)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (9,1)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (9,2)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (10,2)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (11,2)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (11,1)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (11,0)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (10,0)
+MM 00:06:41 C:\Temp\tmp\oop_lab1\BoneGround.cpp		Event activated: BoneGround
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (11,0)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (11,1)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (11,2)
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (11,3)
+MM 00:06:41 C:\Temp\tmp\oop_lab1\BoneGround.cpp		Event activated: BoneGround
+MM 00:06:45 C:\Temp\tmp\oop_lab1\Controller.cpp		Player moved at position (10,3)
+MM 00:06:48 C:\Temp\tmp\oop_lab1\Level_up.cpp		Event activated: Level_up
+GM 00:06:45		Game finisfed witn win

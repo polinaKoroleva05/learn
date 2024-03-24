@@ -1,0 +1,8 @@
+up: U
+dowggggn: S
+
+
+
+    left: L
+right: D
+finish    : Q

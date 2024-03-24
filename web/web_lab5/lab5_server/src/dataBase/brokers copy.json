@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Ilon Mask",
+        "money": 80000,
+        "tmpMoney": 80000,
+        "isAdmin": false,
+        "stocks": []
+    },
+    {
+        "id": 2,
+        "name": "Mark Zuckerberg",
+        "money": 60000,
+        "tmpMoney": 60000,
+        "isAdmin": false,
+        "stocks": []
+    },
+    {
+        "id": 3,
+        "name": "Oleg Tinkov",
+        "money": 20000,
+        "tmpMoney": 20000,
+        "isAdmin": false,
+        "stocks": []
+    },
+    {
+        "id": 4,
+        "name": "Polina Koroleva",
+        "money": 180000,
+        "tmpMoney": 180000,
+        "isAdmin": true,
+        "stocks": []
+    },
+    {
+        "id": 5,
+        "name": "Bill Geits",
+        "money": 100000,
+        "tmpMoney": 100000,
+        "isAdmin": false,
+        "stocks": []
+    }
+]

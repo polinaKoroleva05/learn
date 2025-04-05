@@ -1,0 +1,76 @@
+# AKing
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+
+# Файл CLANG-FORMAT, созданный Visual Studio
+
+
+# Параметры стиля в этом файле являются наиболее безопасными для репликации
+# текущей конфигурации форматирования IDE из меню "Сервис" > "Параметры". Тем не менее 
+# необходимо проверить следующие параметры стиля:
+# SpacesInParentheses
+
+BasedOnStyle: LLVM
+#Language: Cpp
+#AccessModifierOffset: -4
+AccessModifierOffset: 0
+AlignAfterOpenBracket: Align
+AllowShortBlocksOnASingleLine: true
+AllowShortFunctionsOnASingleLine: All
+SpacesInAngles: true
+
+AlignConsecutiveAssignments: true #выравнивать присваивания
+AlignConsecutiveDeclarations: true #выравнивать имена при объявлении
+
+#ContinuationIndentWidth: 2
+#AlignTrailingComments: true #выравнивать коментарии
+FixNamespaceComments: true
+IndentWrappedFunctionNames: false
+IndentPPDirectives: PPDIS_AfterHash
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: true
+  AfterControlStatement: true
+  AfterEnum: true
+  AfterFunction: true # { с новой строки после объявления ф.
+  AfterNamespace: true
+  AfterStruct: true
+  AfterUnion: true
+  BeforeCatch: true
+  BeforeElse: true
+  IndentBraces: false
+  SplitEmptyFunction: true
+  SplitEmptyRecord: false
+
+ColumnLimit: 0
+Cpp11BracedListStyle: false
+DerivePointerAlignment: true
+FixNamespaceComments: false
+IndentCaseLabels: false
+IndentPPDirectives: AfterHash
+IndentWidth: 4
+MaxEmptyLinesToKeep: 10
+NamespaceIndentation: All
+SortIncludes: false
+SortUsingDeclarations: false
+SpaceAfterCStyleCast: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: true    #отступ внутри скобок
+SpacesInSquareBrackets: true
+
+# The number of columns used for tab stops.
+TabWidth: 4
+
+#UseTab: false
+#UseTab: true
+UseTab: ForIndentation
+
+#BinPackArguments: false
+#BinPackParameters: false
+#ExperimentalAutoDetectBinPacking: false
+#ExperimentalAutoDetectBinPacking: true
+#AllowAllParametersOfDeclarationOnNextLine: false
+#AllowAllParametersOfDeclarationOnNextLine: true

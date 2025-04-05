@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\events">
+      <UniqueIdentifier>{0cd6f6fe-105c-4338-8228-0ddce5bac935}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\events">
+      <UniqueIdentifier>{9a4b90d1-a4d6-4abc-98c2-2efc24b0c4c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\factory_events">
+      <UniqueIdentifier>{f3db0a95-b5eb-4395-b213-6be910f12164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\factory_events">
+      <UniqueIdentifier>{000bd8fd-e8d8-46b6-a8aa-d6d4e419cab1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\events\EventPlayer">
+      <UniqueIdentifier>{4d5e3e10-f77d-4624-9489-33fc16c6bb15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\events\EventField">
+      <UniqueIdentifier>{13462c76-09af-4837-9cde-684e78fb3fe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\logging">
+      <UniqueIdentifier>{837e91ec-c582-433d-99ff-a326f07b480c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\logging\Message">
+      <UniqueIdentifier>{7edb3684-abba-4de9-87dc-b04a5b0aba49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\logging">
+      <UniqueIdentifier>{1ac76334-da89-43a5-b18c-8490e65b1059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\logging\Message">
+      <UniqueIdentifier>{0e49cfe0-a094-4fc8-add9-52057c93d1ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\logging\Logger">
+      <UniqueIdentifier>{0bb28e9e-c23a-4fa2-a7e4-2d3c890720b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\logging\Logger">
+      <UniqueIdentifier>{cd276b54-caec-496e-a2f7-7fdf89e4fc6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\logging\loglevels">
+      <UniqueIdentifier>{0294c8f3-71d2-4bca-8984-43a442797a36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\logging\loglevels">
+      <UniqueIdentifier>{29c19a47-f165-4cb3-bb20-e19ef8556430}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\MainLogic">
+      <UniqueIdentifier>{1b67ed04-aafd-4ad9-87f5-a22dad482b44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\MainLogic">
+      <UniqueIdentifier>{362bccee-0316-44a9-942b-663edf070973}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\controlling">
+      <UniqueIdentifier>{bd1fe17a-f750-4f76-b516-9281adcf4468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\controlling">
+      <UniqueIdentifier>{20880e86-f411-4f6b-ac27-5e6ecd7763bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\generation">
+      <UniqueIdentifier>{1154207f-4e7a-460a-8729-176031d0bded}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\generation\rules">
+      <UniqueIdentifier>{1a9120f3-8e56-44b2-bb23-e2508b67165f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\generation">
+      <UniqueIdentifier>{257c35be-30e1-4038-b8ba-cb124d1d3597}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Level_up.cpp">
+      <Filter>Исходные файлы\events</Filter>
+    </ClCompile>
+    <ClCompile Include="BoneGround.cpp">
+      <Filter>Исходные файлы\events</Filter>
+    </ClCompile>
+    <ClCompile Include="Bone.cpp">
+      <Filter>Исходные файлы\events</Filter>
+    </ClCompile>
+    <ClCompile Include="DamageFactory.cpp">
+      <Filter>Исходные файлы\factory_events</Filter>
+    </ClCompile>
+    <ClCompile Include="Damage.cpp">
+      <Filter>Исходные файлы\events</Filter>
+    </ClCompile>
+    <ClCompile Include="BoneFactory.cpp">
+      <Filter>Исходные файлы\factory_events</Filter>
+    </ClCompile>
+    <ClCompile Include="Bone_from_groundFactory.cpp">
+      <Filter>Исходные файлы\factory_events</Filter>
+    </ClCompile>
+    <ClCompile Include="Level_upFactory.cpp">
+      <Filter>Исходные файлы\factory_events</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Исходные файлы\events</Filter>
+    </ClCompile>
+    <ClCompile Include="MapFactory.cpp">
+      <Filter>Исходные файлы\factory_events</Filter>
+    </ClCompile>
+    <ClCompile Include="Message.cpp">
+      <Filter>Исходные файлы\logging\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleLog.cpp">
+      <Filter>Исходные файлы\logging\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="FileLog.cpp">
+      <Filter>Исходные файлы\logging\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="LoggerPool.cpp">
+      <Filter>Исходные файлы\logging</Filter>
+    </ClCompile>
+    <ClCompile Include="Cell.cpp">
+      <Filter>Исходные файлы\MainLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="CellView.cpp">
+      <Filter>Исходные файлы\MainLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandPerformer.cpp">
+      <Filter>Исходные файлы\MainLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Исходные файлы\MainLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>Исходные файлы\MainLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldView.cpp">
+      <Filter>Исходные файлы\MainLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Исходные файлы\MainLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLog.cpp">
+      <Filter>Исходные файлы\logging\loglevels</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelLog.cpp">
+      <Filter>Исходные файлы\logging\loglevels</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorLog.cpp">
+      <Filter>Исходные файлы\logging\loglevels</Filter>
+    </ClCompile>
+    <ClCompile Include="LoggerPoolManager.cpp">
+      <Filter>Исходные файлы\logging</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>Исходные файлы\controlling</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleCommandReciever.cpp">
+      <Filter>Исходные файлы\controlling</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandHandler.cpp">
+      <Filter>Исходные файлы\controlling</Filter>
+    </ClCompile>
+    <ClCompile Include="GUICommandReciever.cpp">
+      <Filter>Исходные файлы\controlling</Filter>
+    </ClCompile>
+    <ClCompile Include="FileReader.cpp">
+      <Filter>Исходные файлы\controlling</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelOne.cpp">
+      <Filter>Исходные файлы\generation</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelTwo.cpp">
+      <Filter>Исходные файлы\generation</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelContext.cpp">
+      <Filter>Исходные файлы\generation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Event.h">
+      <Filter>Файлы заголовков\events</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonEventsFactory.h">
+      <Filter>Файлы заголовков\factory_events</Filter>
+    </ClInclude>
+    <ClInclude Include="Level_upFactory.h">
+      <Filter>Файлы заголовков\factory_events</Filter>
+    </ClInclude>
+    <ClInclude Include="DamageFactory.h">
+      <Filter>Файлы заголовков\factory_events</Filter>
+    </ClInclude>
+    <ClInclude Include="EventField.h">
+      <Filter>Файлы заголовков\events\EventField</Filter>
+    </ClInclude>
+    <ClInclude Include="Damage.h">
+      <Filter>Файлы заголовков\events\EventPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="Level_up.h">
+      <Filter>Файлы заголовков\events\EventPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="BoneGround.h">
+      <Filter>Файлы заголовков\events\EventField</Filter>
+    </ClInclude>
+    <ClInclude Include="EventPlayer.h">
+      <Filter>Файлы заголовков\events\EventPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="Bone.h">
+      <Filter>Файлы заголовков\events\EventField</Filter>
+    </ClInclude>
+    <ClInclude Include="Change_typeFactory.h">
+      <Filter>Файлы заголовков\factory_events</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Файлы заголовков\events\EventField</Filter>
+    </ClInclude>
+    <ClInclude Include="Message.h">
+      <Filter>Файлы заголовков\logging\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="LoggerPool.h">
+      <Filter>Файлы заголовков\logging</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Файлы заголовков\logging\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLog.h">
+      <Filter>Файлы заголовков\logging\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleLog.h">
+      <Filter>Файлы заголовков\logging\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Файлы заголовков\logging\loglevels</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLog.h">
+      <Filter>Файлы заголовков\logging\loglevels</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorLog.h">
+      <Filter>Файлы заголовков\logging\loglevels</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelLog.h">
+      <Filter>Файлы заголовков\logging\loglevels</Filter>
+    </ClInclude>
+    <ClInclude Include="Cell.h">
+      <Filter>Файлы заголовков\MainLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="CellView.h">
+      <Filter>Файлы заголовков\MainLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandPerformer.h">
+      <Filter>Файлы заголовков\MainLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Файлы заголовков\MainLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>Файлы заголовков\MainLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldView.h">
+      <Filter>Файлы заголовков\MainLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Файлы заголовков\MainLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="LoggerPoolManager.h">
+      <Filter>Файлы заголовков\logging</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>Файлы заголовков\controlling</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandReciever.h">
+      <Filter>Файлы заголовков\controlling</Filter>
+    </ClInclude>
+    <ClInclude Include="FileReader.h">
+      <Filter>Файлы заголовков\controlling</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandHandler.h">
+      <Filter>Файлы заголовков\controlling</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldGenerator.h">
+      <Filter>Файлы заголовков\generation</Filter>
+    </ClInclude>
+    <ClInclude Include="RuleMap.h">
+      <Filter>Файлы заголовков\generation\rules</Filter>
+    </ClInclude>
+    <ClInclude Include="RuleRock.h">
+      <Filter>Файлы заголовков\generation\rules</Filter>
+    </ClInclude>
+    <ClInclude Include="RuleBarb.h">
+      <Filter>Файлы заголовков\generation\rules</Filter>
+    </ClInclude>
+    <ClInclude Include="RuleSize.h">
+      <Filter>Файлы заголовков\generation\rules</Filter>
+    </ClInclude>
+    <ClInclude Include="RuleBone.h">
+      <Filter>Файлы заголовков\generation\rules</Filter>
+    </ClInclude>
+    <ClInclude Include="RuleWin.h">
+      <Filter>Файлы заголовков\generation\rules</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelStrategy.h">
+      <Filter>Файлы заголовков\generation</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelOne.h">
+      <Filter>Файлы заголовков\generation</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelTwo.h">
+      <Filter>Файлы заголовков\generation</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelContext.h">
+      <Filter>Файлы заголовков\generation</Filter>
+    </ClInclude>
+    <ClInclude Include="RuleLevelUp.h">
+      <Filter>Файлы заголовков\generation\rules</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

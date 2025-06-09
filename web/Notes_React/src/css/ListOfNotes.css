@@ -1,0 +1,37 @@
+.list{
+    width: 42vw;
+    overflow-y: auto;
+    height: 95vh;
+}
+
+.list::-webkit-scrollbar{
+    width: 6px;
+}
+
+.list::-webkit-scrollbar-thumb{
+    background-color:  rgb(200, 183, 183);
+    border-radius: 18px;
+}
+
+.note-item {
+    background-color: white;
+    border-radius: 10px;
+    text-align: left;
+    width: 30vw;
+    padding: 2vh;
+    margin: 2vh;
+}
+
+.clipable-text{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.light-text{
+    color: rgb(132, 152, 165);
+    margin: 0;
+    font-size: 0.8rem;
+}

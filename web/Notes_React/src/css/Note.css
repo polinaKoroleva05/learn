@@ -1,0 +1,66 @@
+.note{
+    background-color: white;
+    border-radius: 10px;
+    text-align: left;
+    height: 86vh;
+    width: 57vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 5vh;
+    margin: 2vh;
+    margin-right: 2vh;
+    overflow-y: hidden;
+    white-space: pre-wrap;
+}
+
+.content-field::-webkit-scrollbar{
+    width: 6px;
+}
+
+.content-field::-webkit-scrollbar-thumb{
+    background-color:  rgb(147, 139, 139);
+    border-radius: 18px;
+}
+
+.content-field{
+    font-family: inherit;
+    display: flex;
+    resize: none;
+    width: 48vw;
+    height: 68vh;
+    font-size: 1rem;
+    border: none;
+}
+
+.name-field{
+    font-weight: bold;
+    font-family: inherit;
+    resize: none;
+    width: 48vw;
+    height: 3rem;
+    font-size: 2rem;
+    margin-bottom: 2vh;
+    border: none;
+}
+
+.done-button, .edit-button, .delete-button, .cancel-button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    color:  rgb(154, 147, 147);
+}
+
+.cancel-button{
+    font-size: 1.1rem;
+}
+
+.bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-text{
+    color:  rgb(154, 147, 147);
+    margin: 0;
+    font-size: 1rem;
+}

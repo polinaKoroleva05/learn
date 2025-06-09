@@ -6,6 +6,10 @@ import ListOfNotes from './components/ListOfNotes';
 import AddNote from './components/AddNote';
 import testData from './testData/testData';
 import { MdAdd } from "react-icons/md";
+import { Spinner } from '@chakra-ui/react';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import { fetchNotesService, addNoteService, changeNoteService } from './services/notesService';
+import { useNotesQuery } from './hooks/useNotesQuery';
 
 const nameOfLocalStorage = 'notes_by_koroleva2025';
 
@@ -13,67 +17,72 @@ export default function App() {
     const [listNotes, changeListNotes] = useState([])
     const [openedNoteId, changeOpenedNoteId] = useState(-1)
     const navigate = useNavigate();
+    const client = useQueryClient();
 
-    const getApiData = () => {
-        if(!localStorage.getItem(nameOfLocalStorage) || localStorage.getItem(nameOfLocalStorage)===undefined){
-            localStorage.setItem(nameOfLocalStorage, JSON.stringify([testData]));
-        }
-        const notesFromStorage = JSON.parse(localStorage.getItem(nameOfLocalStorage));
-        let validNotes = notesFromStorage.filter(note => note.hasOwnProperty('name') && note.hasOwnProperty('content') && note.hasOwnProperty('date')); //если данные подпорчены, убираем их
-        if(!validNotes.length){
-            validNotes = [testData]; //если все данные оказались некорректными, устанавливаем начальную записку
-        }
-        changeListNotes(validNotes);
-        changeOpenedNoteId(validNotes.length-1);
-    }
+    const { data, isLoading, isSuccess } = useNotesQuery();
 
-    const saveApiData = (newListNotes) => {
-        localStorage.setItem(nameOfLocalStorage, JSON.stringify(newListNotes));
-    }
+    const { mutate: createNoteMutation } = useMutation({
+        mutationFn: addNoteService,
+        onSuccess: (newNote) => {
+            client.setQueryData(['notes'], (oldNotes)=>[...oldNotes, newNote]);
+            // client.invalidateQueries({ queryKey: ['notes'] });
+        }
+    })
+
+        const { mutate: changeNoteMutation } = useMutation({
+        mutationFn: changeNoteService,
+        onSuccess: () => {
+            client.invalidateQueries({ queryKey: ['notes'] });
+        }
+    })
+
+    // useEffect(() => {
+    //     getApiData();
+    // }, [])
 
     useEffect(() => {
-        getApiData();
-    }, [])
+        console.log(openedNoteId);
+    })
 
     const deleteNote = () => {
         listNotes.splice(openedNoteId, 1);
         changeListNotes([...listNotes]);
-        changeOpenedNoteId(listNotes.length-1);
-        saveApiData(listNotes);
+        changeOpenedNoteId(listNotes.length - 1);
+        // saveApiData(listNotes);
     }
 
     const changeNote = (newNote) => {
-        listNotes.splice(openedNoteId, 1);
         newNote.date = (new Date()).toDateString();
-        let newListNotes = [...listNotes, newNote];
-        changeListNotes(newListNotes);
-        changeOpenedNoteId(listNotes.length);
-        saveApiData(newListNotes);
+        changeNoteMutation([JSON.stringify(newNote), newNote.id]);
+        changeId(data.length);
     }
 
     const addNote = (newNote) => {
         newNote.date = (new Date()).toDateString();
-        let newListNotes = [...listNotes, newNote];
-        changeListNotes(newListNotes);
-        changeId(listNotes.length);
-        saveApiData(newListNotes);
+        createNoteMutation(JSON.stringify(newNote));
+        changeId(data.length);
     }
 
     const changeId = (id) => {
-        changeOpenedNoteId(id); 
+        changeOpenedNoteId(id);
         navigate('/');
     }
 
+    if (isLoading) {
+        return <Spinner thickness='4px' speed='0.5s' color='rgb(154, 147, 147)' size='xl' />
+    }
     return (
         <div className='App'>
-            <button className='addButton' onClick={()=>navigate('/addNote')}><MdAdd/></button>
-            <div className='container'>
-                <ListOfNotes listNotes={listNotes} onChangeId={changeId} />
-                <Routes>
-                    <Route path="/addNote" element={<AddNote onAddNote={addNote}/>}></Route>
-                    <Route path="/*" element={<Note note={listNotes[openedNoteId]} onChangeNote={changeNote} onDeleteNote={deleteNote} />}></Route>
-                </Routes>
-            </div>
+            <button className='addButton' onClick={() => navigate('/addNote')}><MdAdd /></button>
+            {isSuccess &&
+                <div className='container'>
+                    <ListOfNotes listNotes={data} onChangeId={changeId} />
+                    <Routes>
+                        <Route path="/addNote" element={<AddNote onAddNote={addNote} />}></Route>
+                        <Route path="/*" element={<Note note={data[openedNoteId]} onChangeNote={changeNote} onDeleteNote={deleteNote} />}></Route>
+                    </Routes>
+                </div>
+            }
         </div>
     );
 }

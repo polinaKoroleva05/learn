@@ -8,6 +8,7 @@ export default function Note(props) {
     const [readOnlyMode, switchMode] = useState(true);
 
     useEffect(() => {
+        console.log("in note.js:", props.note?.id);
         changeNote(props.note);
         switchMode(true);
     }, [props.note])
@@ -41,7 +42,7 @@ export default function Note(props) {
                         {readOnlyMode === true ?
                             <button className='edit-button' onClick={() => switchMode(false)}><MdEdit /></button> :
                             <button className='done-button' onClick={validate}><ImCheckmark /></button>}
-                        <button className='delete-button' onClick={props.onDeleteNote}><MdDelete /></button>
+                        <button className='delete-button' onClick={()=>props.onDeleteNote(noteCurrent.id)}><MdDelete /></button>
                         </div>
                     </div>
                     <textarea className='name-field' type='text' placeholder="Заголовок" readOnly={readOnlyMode} name='name' value={noteCurrent.name} onChange={validateNameInput} />

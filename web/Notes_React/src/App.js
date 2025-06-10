@@ -8,7 +8,7 @@ import testData from './testData/testData';
 import { MdAdd } from "react-icons/md";
 import { Spinner } from '@chakra-ui/react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import { fetchNotesService, addNoteService, changeNoteService } from './services/notesService';
+import { fetchNotesService, addNoteService, changeNoteService, deleteNoteService } from './services/notesService';
 import { useNotesQuery } from './hooks/useNotesQuery';
 
 const nameOfLocalStorage = 'notes_by_koroleva2025';
@@ -24,13 +24,20 @@ export default function App() {
     const { mutate: createNoteMutation } = useMutation({
         mutationFn: addNoteService,
         onSuccess: (newNote) => {
-            client.setQueryData(['notes'], (oldNotes)=>[...oldNotes, newNote]);
+            client.setQueryData(['notes'], (oldNotes) => [...oldNotes, newNote]);
             // client.invalidateQueries({ queryKey: ['notes'] });
         }
     })
 
-        const { mutate: changeNoteMutation } = useMutation({
+    const { mutate: changeNoteMutation } = useMutation({
         mutationFn: changeNoteService,
+        onSuccess: () => {
+            client.invalidateQueries({ queryKey: ['notes'] });
+        }
+    })
+
+    const { mutate: deleteNoteMutation } = useMutation({
+        mutationFn: deleteNoteService,
         onSuccess: () => {
             client.invalidateQueries({ queryKey: ['notes'] });
         }
@@ -44,26 +51,24 @@ export default function App() {
         console.log(openedNoteId);
     })
 
-    const deleteNote = () => {
-        listNotes.splice(openedNoteId, 1);
-        changeListNotes([...listNotes]);
-        changeOpenedNoteId(listNotes.length - 1);
-        // saveApiData(listNotes);
+    const deleteNote = (id) => {
+        deleteNoteMutation(id)
+        changeOpenedNoteId(data.length - 2);
     }
 
     const changeNote = (newNote) => {
         newNote.date = (new Date()).toDateString();
         changeNoteMutation([JSON.stringify(newNote), newNote.id]);
-        changeId(data.length);
+        toggleNote(data.length);
     }
 
     const addNote = (newNote) => {
         newNote.date = (new Date()).toDateString();
         createNoteMutation(JSON.stringify(newNote));
-        changeId(data.length);
+        toggleNote(data.length);
     }
 
-    const changeId = (id) => {
+    const toggleNote = (id) => {
         changeOpenedNoteId(id);
         navigate('/');
     }
@@ -76,7 +81,7 @@ export default function App() {
             <button className='addButton' onClick={() => navigate('/addNote')}><MdAdd /></button>
             {isSuccess &&
                 <div className='container'>
-                    <ListOfNotes listNotes={data} onChangeId={changeId} />
+                    <ListOfNotes listNotes={data} onChangeId={toggleNote} />
                     <Routes>
                         <Route path="/addNote" element={<AddNote onAddNote={addNote} />}></Route>
                         <Route path="/*" element={<Note note={data[openedNoteId]} onChangeNote={changeNote} onDeleteNote={deleteNote} />}></Route>

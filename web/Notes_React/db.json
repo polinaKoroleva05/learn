@@ -37,76 +37,10 @@
       "id": "4dfe"
     },
     {
-      "id": "99f0",
-      "name": "ghf",
-      "content": "kkkkkk",
-      "date": "Mon Jun 09 2025"
-    },
-    {
-      "id": "80e0",
-      "name": "новая",
-      "content": "авпав",
-      "date": "Mon Jun 09 2025"
-    },
-    {
-      "id": "cdac",
-      "name": "tot",
-      "content": "еще",
-      "date": "Mon Jun 09 2025"
-    },
-    {
-      "id": "3f23",
-      "name": "уууу",
-      "content": "ВОТ ТАК",
-      "date": "Mon Jun 09 2025"
-    },
-    {
-      "id": "1190",
-      "name": "посdffd",
-      "content": "посо",
-      "date": "Mon Jun 09 2025"
-    },
-    {
-      "id": "643b",
-      "name": "ну пожожда",
-      "content": "плиииз",
-      "date": "Mon Jun 09 2025"
-    },
-    {
-      "id": "32d6",
-      "name": "даааhjjhh",
-      "content": "йтеее",
-      "date": "Mon Jun 09 2025"
-    },
-    {
-      "id": "5b25",
-      "name": "а так? опа",
-      "content": "а так!",
-      "date": "Mon Jun 09 2025"
-    },
-    {
-      "id": "8b3f",
-      "name": "gggg",
-      "content": "gggggg",
-      "date": "Mon Jun 09 2025"
-    },
-    {
-      "id": "f584",
-      "name": "jjjj",
-      "content": "klkl",
-      "date": "Mon Jun 09 2025"
-    },
-    {
-      "id": "f65d",
-      "name": "fggfЕще",
-      "content": "ertreger",
-      "date": "Mon Jun 09 2025"
-    },
-    {
       "id": "1dfd",
       "name": "Новая заметка",
-      "content": "прр",
-      "date": "Mon Jun 09 2025"
+      "content": "Добавлено удаление через json-сервер",
+      "date": "Tue Jun 10 2025"
     }
   ]
 }

@@ -18,10 +18,20 @@ export async function addNoteService(newNote) {
 }
 
 export async function changeNoteService([newNote, id]) {
-    console.log("service", newNote, id)
     const res = await fetch(`${BASE}/${id}`, {
         method: 'PATCH',
         body: newNote,
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    return res.json()
+}
+
+
+export async function deleteNoteService(id) {
+    const res = await fetch(`${BASE}/${id}`, {
+        method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'
         }
